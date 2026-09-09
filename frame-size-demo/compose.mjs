@@ -1,4 +1,6 @@
 import { chromium } from '/Users/welson/Dev/Ribbon/mono/web/node_modules/playwright/index.mjs';
+import { readFileSync } from 'node:fs';
+const dataUri = (p) => `data:image/png;base64,${readFileSync(p).toString('base64')}`;
 const O = '/private/tmp/claude-501/-Users-welson-Dev-Ribbon/3d652999-265d-438e-a825-c69c8e115da0/scratchpad/demo-out';
 const PAIRS = [
   ['A-canvas-path-transposed-settings-1-settle', 'Before (main): canvas path, track settings say 480x640 while frames are 640x480 (an upright iPhone)', 'After (this PR): same start'],
@@ -7,8 +9,8 @@ const PAIRS = [
 ];
 const html = (name, b, a) => `<!doctype html><body style="margin:0;background:#fff;font:15px/1.3 system-ui">
 <div id="pair" style="display:inline-block;padding:10px">
-<div style="color:#b91c1c;font-weight:600;margin:0 0 6px">${b}</div><img src="file://${O}/main/${name}.png" style="display:block">
-<div style="color:#15803d;font-weight:600;margin:14px 0 6px">${a}</div><img src="file://${O}/fix/${name}.png" style="display:block">
+<div style="color:#b91c1c;font-weight:600;margin:0 0 6px">${b}</div><img src="${dataUri(`${O}/main/${name}.png`)}" style="display:block">
+<div style="color:#15803d;font-weight:600;margin:14px 0 6px">${a}</div><img src="${dataUri(`${O}/fix/${name}.png`)}" style="display:block">
 </div></body>`;
 const browser = await chromium.launch();
 const page = await browser.newPage({ viewport: { width: 1200, height: 1000 }, deviceScaleFactor: 1 });
