@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>track-processors frame size demo</title>
+    <style>
+      body { margin: 0; padding: 16px; font: 14px/1.4 system-ui, sans-serif; background: #fff; color: #111; }
+      h1 { font-size: 16px; margin: 0 0 8px; }
+      .row { display: flex; gap: 16px; align-items: flex-start; }
+      .tile { display: flex; flex-direction: column; gap: 6px; }
+      .tile video { background: #000; display: block; max-width: 45vw; max-height: 60vh; }
+      #status { white-space: pre; font: 12px/1.4 ui-monospace, monospace; background: #f4f4f5; padding: 8px; margin: 12px 0 0; }
+      button { font: inherit; padding: 6px 12px; }
+    </style>
+  </head>
+  <body>
+    <h1 id="title">track-processors frame size demo</h1>
+    <div style="margin-bottom: 12px">
+      <button id="start" hidden style="font-size: 18px; padding: 12px 20px">Start camera</button>
+      <button id="rotate">Rotate source (landscape ↔ portrait)</button>
+      <span id="mode"></span>
+      <span id="links" style="margin-left: 12px"></span>
+    </div>
+    <div class="row" id="row">
+      <div class="tile"><strong>Source track (what the camera delivers)</strong><video id="source" autoplay muted playsinline></video></div>
+      <div class="tile"><strong>Processed track (what gets published)</strong><video id="output" autoplay muted playsinline></video></div>
+    </div>
+    <pre id="status"></pre>
+    <script src="./frame-size-demo.ts" type="module"></script>
+  </body>
+</html>
