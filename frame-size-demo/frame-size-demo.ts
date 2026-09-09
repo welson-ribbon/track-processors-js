@@ -9,12 +9,14 @@
 //   ?subject=emoji        draw an emoji person instead of the vector figure
 //   ?camera=real          use getUserMedia() instead of the synthetic camera (open the page on a phone over
 //                         https, rotate the phone)
-//   ?lib=main|fix         which build to load: lib-main.mjs (upstream main) or lib-fix.mjs (this branch)
+//   ?lib=main|fix         load a prebuilt copy (lib-main.mjs / lib-fix.mjs next to this file) instead of ../src
 import { LocalVideoTrack } from 'livekit-client';
 
 const params = new URLSearchParams(location.search);
-const lib = params.get('lib') === 'main' ? 'main' : 'fix';
-const { BackgroundProcessor } = await import(lib === 'main' ? './lib-main.mjs' : './lib-fix.mjs');
+const lib = params.get('lib');
+const { BackgroundProcessor } = await import(
+  lib === 'main' ? './lib-main.mjs' : lib === 'fix' ? './lib-fix.mjs' : '../src'
+);
 
 const forceCanvasPath = params.get('path') === 'canvas';
 const transposeSettings = params.get('settings') === 'transposed';
@@ -131,8 +133,8 @@ const switchTo = (target: string) => {
   next.set('lib', target);
   return `${location.pathname}?${next}`;
 };
-$('title').textContent = lib === 'main' ? 'BEFORE: livekit main' : 'AFTER: fix branch';
-$('title').style.color = lib === 'main' ? '#b91c1c' : '#15803d';
+$('title').textContent = { main: 'BEFORE: livekit main', fix: 'AFTER: fix branch' }[lib ?? ''] ?? 'track-processors frame size demo (../src)';
+$('title').style.color = { main: '#b91c1c', fix: '#15803d' }[lib ?? ''] ?? '#111';
 $('links').innerHTML = `<a href="${switchTo('main')}">before (main)</a> · <a href="${switchTo('fix')}">after (fix)</a>`;
 if (realCamera) {
   $('rotate').hidden = true;
