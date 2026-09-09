@@ -135,7 +135,9 @@ const switchTo = (target: string) => {
 };
 $('title').textContent = { main: 'BEFORE: livekit main', fix: 'AFTER: fix branch' }[lib ?? ''] ?? 'track-processors frame size demo (../src)';
 $('title').style.color = { main: '#b91c1c', fix: '#15803d' }[lib ?? ''] ?? '#111';
-$('links').innerHTML = `<a href="${switchTo('main')}">before (main)</a> · <a href="${switchTo('fix')}">after (fix)</a>`;
+if (lib) {
+  $('links').innerHTML = `<a href="${switchTo('main')}">before (main)</a> · <a href="${switchTo('fix')}">after (fix)</a>`;
+}
 if (realCamera) {
   $('rotate').hidden = true;
   const start = $('start');
