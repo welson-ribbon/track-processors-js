@@ -1,0 +1,287 @@
+{
+  "main": {
+    "A-canvas-path-transposed-settings": [
+      {
+        "step": "settle",
+        "status": {
+          "path": "canvas (fallback)",
+          "settings": "480x640",
+          "setupSize": "480x640",
+          "presented": "640x480",
+          "frame": "640x480",
+          "output": "480x640",
+          "outputVideo": "480x640",
+          "dummyPaused": false,
+          "framesProcessed": 55,
+          "sharpness": {
+            "face": 2,
+            "shirt": 6,
+            "background": [
+              13,
+              17,
+              13,
+              17
+            ]
+          }
+        },
+        "file": "/private/tmp/claude-501/-Users-welson-Dev-Ribbon/3d652999-265d-438e-a825-c69c8e115da0/scratchpad/demo-out/main/A-canvas-path-transposed-settings-1-settle.png"
+      },
+      {
+        "step": "rotate",
+        "status": {
+          "path": "canvas (fallback)",
+          "settings": "640x480",
+          "setupSize": "480x640",
+          "presented": "480x640",
+          "frame": "480x640",
+          "output": "480x640",
+          "outputVideo": "480x640",
+          "dummyPaused": false,
+          "framesProcessed": 113,
+          "sharpness": {
+            "face": 4,
+            "shirt": 6,
+            "background": [
+              2,
+              2,
+              2,
+              2
+            ]
+          }
+        },
+        "file": "/private/tmp/claude-501/-Users-welson-Dev-Ribbon/3d652999-265d-438e-a825-c69c8e115da0/scratchpad/demo-out/main/A-canvas-path-transposed-settings-2-rotate.png"
+      },
+      {
+        "step": "rotate",
+        "status": {
+          "path": "canvas (fallback)",
+          "settings": "480x640",
+          "setupSize": "480x640",
+          "presented": "640x480",
+          "frame": "640x480",
+          "output": "480x640",
+          "outputVideo": "480x640",
+          "dummyPaused": false,
+          "framesProcessed": 163,
+          "sharpness": {
+            "face": 2,
+            "shirt": 6,
+            "background": [
+              1,
+              0,
+              1,
+              0
+            ]
+          }
+        },
+        "file": "/private/tmp/claude-501/-Users-welson-Dev-Ribbon/3d652999-265d-438e-a825-c69c8e115da0/scratchpad/demo-out/main/A-canvas-path-transposed-settings-3-rotate.png"
+      }
+    ],
+    "B-canvas-path-rotation": [
+      {
+        "step": "settle",
+        "status": {
+          "path": "canvas (fallback)",
+          "settings": "640x480",
+          "setupSize": "640x480",
+          "presented": "640x480",
+          "frame": "640x480",
+          "output": "640x480",
+          "outputVideo": "640x480",
+          "dummyPaused": false,
+          "framesProcessed": 50,
+          "sharpness": {
+            "face": 4,
+            "shirt": 6,
+            "background": [
+              2,
+              2,
+              2,
+              2
+            ]
+          }
+        },
+        "file": "/private/tmp/claude-501/-Users-welson-Dev-Ribbon/3d652999-265d-438e-a825-c69c8e115da0/scratchpad/demo-out/main/B-canvas-path-rotation-1-settle.png"
+      },
+      {
+        "step": "rotate",
+        "status": {
+          "path": "canvas (fallback)",
+          "settings": "480x640",
+          "setupSize": "640x480",
+          "presented": "480x640",
+          "frame": "480x640",
+          "output": "640x480",
+          "outputVideo": "640x480",
+          "dummyPaused": false,
+          "framesProcessed": 109,
+          "sharpness": {
+            "face": 1,
+            "shirt": 0,
+            "background": [
+              1,
+              1,
+              0,
+              0
+            ]
+          }
+        },
+        "file": "/private/tmp/claude-501/-Users-welson-Dev-Ribbon/3d652999-265d-438e-a825-c69c8e115da0/scratchpad/demo-out/main/B-canvas-path-rotation-2-rotate.png"
+      },
+      {
+        "step": "rotate",
+        "status": {
+          "path": "canvas (fallback)",
+          "settings": "640x480",
+          "setupSize": "640x480",
+          "presented": "640x480",
+          "frame": "640x480",
+          "output": "640x480",
+          "outputVideo": "640x480",
+          "dummyPaused": false,
+          "framesProcessed": 159,
+          "sharpness": {
+            "face": 4,
+            "shirt": 6,
+            "background": [
+              2,
+              2,
+              2,
+              2
+            ]
+          }
+        },
+        "file": "/private/tmp/claude-501/-Users-welson-Dev-Ribbon/3d652999-265d-438e-a825-c69c8e115da0/scratchpad/demo-out/main/B-canvas-path-rotation-3-rotate.png"
+      }
+    ],
+    "C-default-path-rotation": [
+      {
+        "step": "settle",
+        "status": {
+          "path": "MediaStreamTrackProcessor",
+          "settings": "640x480",
+          "setupSize": "640x480",
+          "presented": "640x480",
+          "frame": "640x480",
+          "output": "640x480",
+          "outputVideo": "640x480",
+          "dummyPaused": false,
+          "framesProcessed": 53,
+          "sharpness": {
+            "face": 4,
+            "shirt": 6,
+            "background": [
+              2,
+              2,
+              2,
+              2
+            ]
+          }
+        },
+        "file": "/private/tmp/claude-501/-Users-welson-Dev-Ribbon/3d652999-265d-438e-a825-c69c8e115da0/scratchpad/demo-out/main/C-default-path-rotation-1-settle.png"
+      },
+      {
+        "step": "rotate",
+        "status": {
+          "path": "MediaStreamTrackProcessor",
+          "settings": "480x640",
+          "setupSize": "640x480",
+          "presented": "480x640",
+          "frame": "480x640",
+          "output": "480x640",
+          "outputVideo": "480x640",
+          "dummyPaused": false,
+          "framesProcessed": 98,
+          "sharpness": {
+            "face": 2,
+            "shirt": 0,
+            "background": [
+              1,
+              1,
+              0,
+              0
+            ]
+          }
+        },
+        "file": "/private/tmp/claude-501/-Users-welson-Dev-Ribbon/3d652999-265d-438e-a825-c69c8e115da0/scratchpad/demo-out/main/C-default-path-rotation-2-rotate.png"
+      }
+    ],
+    "D-canvas-path-play-refused": [
+      {
+        "step": "wait",
+        "status": {
+          "path": "canvas (fallback)",
+          "settings": "640x480",
+          "setupSize": "640x480",
+          "presented": "640x480",
+          "frame": "640x480",
+          "output": "640x480",
+          "outputVideo": "0x0",
+          "dummyPaused": false,
+          "framesProcessed": 0,
+          "sharpness": {
+            "face": 0,
+            "shirt": 0,
+            "background": [
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "file": "/private/tmp/claude-501/-Users-welson-Dev-Ribbon/3d652999-265d-438e-a825-c69c8e115da0/scratchpad/demo-out/main/D-canvas-path-play-refused-1-wait.png"
+      },
+      {
+        "step": "click",
+        "status": {
+          "path": "canvas (fallback)",
+          "settings": "640x480",
+          "setupSize": "640x480",
+          "presented": "640x480",
+          "frame": "640x480",
+          "output": "640x480",
+          "outputVideo": "0x0",
+          "dummyPaused": false,
+          "framesProcessed": 0,
+          "sharpness": {
+            "face": 0,
+            "shirt": 0,
+            "background": [
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "file": "/private/tmp/claude-501/-Users-welson-Dev-Ribbon/3d652999-265d-438e-a825-c69c8e115da0/scratchpad/demo-out/main/D-canvas-path-play-refused-2-click.png"
+      },
+      {
+        "step": "wait",
+        "status": {
+          "path": "canvas (fallback)",
+          "settings": "640x480",
+          "setupSize": "640x480",
+          "presented": "640x480",
+          "frame": "640x480",
+          "output": "640x480",
+          "outputVideo": "0x0",
+          "dummyPaused": false,
+          "framesProcessed": 0,
+          "sharpness": {
+            "face": 0,
+            "shirt": 0,
+            "background": [
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "file": "/private/tmp/claude-501/-Users-welson-Dev-Ribbon/3d652999-265d-438e-a825-c69c8e115da0/scratchpad/demo-out/main/D-canvas-path-play-refused-3-wait.png"
+      }
+    ]
+  }
+}
